@@ -1,3 +1,3 @@
-[PyPI]( https://pypi.python.org/pypi/chineseseg)
+[PyPI](https://pypi.python.org/pypi/chineseseg) https://pypi.python.org/pypi/chineseseg
 
 
