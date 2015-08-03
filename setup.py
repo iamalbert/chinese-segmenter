@@ -14,4 +14,7 @@ setup(
     "Natural Language :: Chinese (Simplified)",
     "Natural Language :: Chinese (Traditional)"
   ],
+  package_data = {
+    'chineseseg': ['*.class']
+  }
 )
