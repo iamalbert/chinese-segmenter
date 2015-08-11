@@ -26,9 +26,14 @@ public class DemoSeg {
 
   private static CRFClassifier<CoreLabel> segmenter = null;
 
+  public static boolean debug = false;
+
   public static final CRFClassifier<CoreLabel> getSegmenter() throws Exception{
     if ( segmenter == null ){
-      System.setOut(new PrintStream(System.out, true, "utf-8"));
+      //System.setOut(new PrintStream(System.out, true, "utf-8"));
+      if( ! debug ) {
+        System.err.close();
+      }
       Properties props = new Properties();
       props.setProperty("sighanCorporaDict", basedir);
       // props.setProperty("NormalizationTable", "data/norm.simp.utf8");

@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-version = '0.3'
+version = '0.4'
 
 setup(
   name = 'chineseseg',
@@ -14,7 +14,7 @@ setup(
   keywords = ['nlp','chinese', 'word', 'segment', 'text'],
   license = 'MIT',
   install_requires=[
-    'JPype1',
+    'JPype1','lxml', 'numpy'
   ],
   classifiers = [
     "Programming Language :: Python :: 3",
