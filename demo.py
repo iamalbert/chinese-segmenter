@@ -8,10 +8,10 @@ string = "蘇迪勒颱風造成土石崩塌，供應台北市用水的南勢溪�
 
 ckip = chineseseg.Ckip("wlzhuang", "xxxxaaaackip")
 
-#stanford = chineseseg.stanford("/home/wlzhuang/stanford-segmenter-2015-04-20/stanford-segmenter-3.5.2.jar", debug=True)
+stanford = chineseseg.stanford("/home/wlzhuang/stanford-segmenter-2015-04-20/stanford-segmenter-3.5.2.jar", debug=True)
 
 
-#print( "stanford:", stanford.segment(string) )
+print( "stanford:", stanford.segment(string) )
 print( "ckip:", ckip.segment(string) )
 
 
