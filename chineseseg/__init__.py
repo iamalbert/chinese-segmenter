@@ -58,7 +58,7 @@ class Ckip():
         root = XML(string)
         sents = root.xpath(".//sentence")
         return list(
-            itertools.chain.from_iterable( re.findall("\u3000(\w+)\(\w+\)""",sent.text) for sent in sents )
+            itertools.chain.from_iterable( re.findall("\u3000([^(]+)\(\w+\)""",sent.text) for sent in sents )
         )
 
 
