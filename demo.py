@@ -11,7 +11,7 @@ ckip = chineseseg.Ckip("username", "password")
 stanford = chineseseg.stanford("/home/wlzhuang/stanford-segmenter-2015-04-20/stanford-segmenter-3.5.2.jar", debug=True)
 
 print( "stanford:", stanford.segment(string) )
-print( "stanford:", stanford.segment(string, tosim=True))
+print( "stanford (sim):", stanford.segment(string, tosim=True))
 print( "ckip:", ckip.segment(string, segsent=True) )
 
 
