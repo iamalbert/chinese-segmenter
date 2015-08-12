@@ -12,6 +12,8 @@ stanford = chineseseg.stanford("/home/wlzhuang/stanford-segmenter-2015-04-20/sta
 
 print( "stanford:", stanford.segment(string) )
 print( "stanford (sim):", stanford.segment(string, tosim=True))
+
+print( "ckip:", ckip.segment(string) )
 print( "ckip:", ckip.segment(string, segsent=True) )
 
 
